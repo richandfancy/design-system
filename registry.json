@@ -1,0 +1,20 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry.json",
+  "name": "designsystem",
+  "homepage": "https://github.com/richandfancy/design-system",
+  "items": [
+    {
+      "name": "floating-input",
+      "type": "registry:ui",
+      "title": "Floating Input",
+      "description": "Material Design floating label input with presets for Email, Password, Phone, Number",
+      "dependencies": [],
+      "files": [
+        {
+          "path": "registry/floating-input.tsx",
+          "type": "registry:ui"
+        }
+      ]
+    }
+  ]
+}
