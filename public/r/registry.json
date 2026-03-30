@@ -15,6 +15,20 @@
           "type": "registry:ui"
         }
       ]
+    },
+    {
+      "name": "base",
+      "type": "registry:block",
+      "title": "Design System Base",
+      "description": "Token contract template + all extension components",
+      "registryDependencies": ["floating-input"],
+      "files": [
+        {
+          "path": "registry/base-tokens.css",
+          "type": "registry:file",
+          "target": "src/styles/design-tokens.css"
+        }
+      ]
     }
   ]
 }

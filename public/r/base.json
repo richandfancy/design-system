@@ -1,0 +1,18 @@
+{
+  "$schema": "https://ui.shadcn.com/schema/registry-item.json",
+  "name": "base",
+  "title": "Design System Base",
+  "description": "Token contract template + all extension components",
+  "registryDependencies": [
+    "floating-input"
+  ],
+  "files": [
+    {
+      "path": "registry/base-tokens.css",
+      "content": "/*\n * Design System Token Contract\n * ============================\n * Every consumer app must define these CSS variables.\n * Copy this file and fill in your brand values.\n *\n * Usage: @designsystem components consume these tokens.\n * They never hardcode colors, radii, or shadows.\n */\n\n:root {\n  /* ── Colors (semantic) ── */\n  --background: ;          /* page/app background */\n  --foreground: ;          /* default text color */\n  --card: ;                /* card/surface background */\n  --card-foreground: ;     /* text on cards */\n  --primary: ;             /* brand primary action color */\n  --primary-foreground: ;  /* text on primary */\n  --secondary: ;           /* secondary surfaces */\n  --secondary-foreground: ;\n  --accent: ;              /* highlights, hover states */\n  --accent-foreground: ;\n  --muted: ;               /* subdued backgrounds */\n  --muted-foreground: ;    /* subdued text */\n  --destructive: ;         /* danger/delete actions */\n  --border: ;              /* borders, dividers */\n  --input: ;               /* input borders */\n  --ring: ;                /* focus ring color */\n  --ring-offset: ;         /* focus ring offset background */\n\n  /* ── Typography ── */\n  --font-sans: ;           /* primary font family */\n  --font-mono: ;           /* code/monospace (optional) */\n\n  /* ── Shape ── */\n  --radius: ;              /* base radius */\n  --radius-sm: ;\n  --radius-md: ;\n  --radius-lg: ;\n  --radius-xl: ;\n\n  /* ── Shadows ── */\n  --shadow-sm: ;           /* subtle elevation */\n  --shadow-md: ;           /* default elevation */\n  --shadow-lg: ;           /* modal/overlay elevation */\n}\n\n/* Dark theme — define same variables with dark values */\n.dark, [data-theme=\"dark\"] {\n  /* --background: ; */\n  /* --foreground: ; */\n  /* ... same token names, dark values */\n}\n\n/* Or use media query: */\n/* @media (prefers-color-scheme: dark) { :root { ... } } */\n",
+      "type": "registry:file",
+      "target": "src/styles/design-tokens.css"
+    }
+  ],
+  "type": "registry:block"
+}

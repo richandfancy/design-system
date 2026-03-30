@@ -1,0 +1,56 @@
+/*
+ * Design System Token Contract
+ * ============================
+ * Every consumer app must define these CSS variables.
+ * Copy this file and fill in your brand values.
+ *
+ * Usage: @designsystem components consume these tokens.
+ * They never hardcode colors, radii, or shadows.
+ */
+
+:root {
+  /* ── Colors (semantic) ── */
+  --background: ;          /* page/app background */
+  --foreground: ;          /* default text color */
+  --card: ;                /* card/surface background */
+  --card-foreground: ;     /* text on cards */
+  --primary: ;             /* brand primary action color */
+  --primary-foreground: ;  /* text on primary */
+  --secondary: ;           /* secondary surfaces */
+  --secondary-foreground: ;
+  --accent: ;              /* highlights, hover states */
+  --accent-foreground: ;
+  --muted: ;               /* subdued backgrounds */
+  --muted-foreground: ;    /* subdued text */
+  --destructive: ;         /* danger/delete actions */
+  --border: ;              /* borders, dividers */
+  --input: ;               /* input borders */
+  --ring: ;                /* focus ring color */
+  --ring-offset: ;         /* focus ring offset background */
+
+  /* ── Typography ── */
+  --font-sans: ;           /* primary font family */
+  --font-mono: ;           /* code/monospace (optional) */
+
+  /* ── Shape ── */
+  --radius: ;              /* base radius */
+  --radius-sm: ;
+  --radius-md: ;
+  --radius-lg: ;
+  --radius-xl: ;
+
+  /* ── Shadows ── */
+  --shadow-sm: ;           /* subtle elevation */
+  --shadow-md: ;           /* default elevation */
+  --shadow-lg: ;           /* modal/overlay elevation */
+}
+
+/* Dark theme — define same variables with dark values */
+.dark, [data-theme="dark"] {
+  /* --background: ; */
+  /* --foreground: ; */
+  /* ... same token names, dark values */
+}
+
+/* Or use media query: */
+/* @media (prefers-color-scheme: dark) { :root { ... } } */
