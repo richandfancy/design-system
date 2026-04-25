@@ -5,5 +5,12 @@
   "description": "Shared component registry for all web apps",
   "scripts": {
     "build": "npx shadcn@latest build"
+  },
+  "devDependencies": {
+    "@eslint/js": "^10.0.1",
+    "eslint": "^10.2.1",
+    "eslint-plugin-react-hooks": "^7.1.1",
+    "eslint-plugin-sonarjs": "^4.0.3",
+    "typescript-eslint": "^8.59.0"
   }
 }
